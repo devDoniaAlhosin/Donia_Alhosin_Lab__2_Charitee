@@ -116,6 +116,12 @@ li {
   display: block;
   font-size: 16px;
 }
+.navbar-toggler {
+  background: white;
+}
+/* .navbar-collapse {
+  background-color: #263b5c;
+} */
 .btn1 {
   padding: 1rem 2rem;
   display: flex;
@@ -868,6 +874,13 @@ li {
 /* Media Query  */
 /* Tablet */
 @media (max-width: 992px) {
+  .contact---info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .navbar-collapse {
+    background-color: #263b5c;
+  }
   /* Donate */
   .dontae-container {
     margin-top: 55rem;
@@ -1026,6 +1039,7 @@ li {
       width: 90%;
     }
     .how--sections {
+      gap: 1rem;
       flex-direction: column;
       width: 100%;
       .how--section--parts {
@@ -1033,5 +1047,24 @@ li {
       }
     }
   }
+  .how--container {
+    & .how--box {
+      & .how--sections {
+        .how--section--parts {
+          width: 100%;
+        }
+      }
+    }
+  }
   /* End help */
+  /* Carsual  */
+  .carsual-container {
+    width: 90%;
+    flex-direction: column;
+  }
+  .carsual-container {
+    .carsual-content {
+      width: 100%;
+    }
+  }
 }
